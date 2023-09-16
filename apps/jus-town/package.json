@@ -49,6 +49,7 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-tailwindcss": "^0.0.7",

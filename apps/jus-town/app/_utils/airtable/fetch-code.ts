@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { Track } from "types";
+import { Track } from "@/_types";
 
 import { base } from "./base";
 

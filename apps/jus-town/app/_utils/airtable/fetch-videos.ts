@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { Video } from "types";
+import { Video } from "@/_types";
 
 import { base } from "./base";
 

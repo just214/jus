@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .surface-1 {
+    @apply bg-white dark:bg-gray-800;
+  }
+
+  .surface-2 {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  .text-1 {
+    @apply text-gray-800 dark:text-white;
+  }
+
+  .text-2 {
+    @apply text-gray-500 dark:text-gray-200;
+  }
+}

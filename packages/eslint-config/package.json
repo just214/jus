@@ -1,0 +1,39 @@
+{
+  "name": "@jus/eslint-config",
+  "private": false,
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo \"No build script required\" && exit 0",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.2",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-functional": "^6.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "eslint-plugin-standard": "^4.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8",
+    "prettier": ">=2.4.1",
+    "typescript": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just214/kind.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

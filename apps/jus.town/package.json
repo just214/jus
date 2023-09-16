@@ -1,0 +1,65 @@
+{
+  "name": "jus-town",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "fetch:airtable": "node --loader ts-node/esm --inspect src/utils/airtable/index.ts"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@vercel/kv": "^0.2.2",
+    "airtable": "^0.12.2",
+    "aws-sdk": "^2.1459.0",
+    "classnames": "^2.3.2",
+    "encoding": "^0.1.13",
+    "next": "13.4.19",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-d3-tree": "^3.6.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-player": "^2.13.0",
+    "react-sparkle": "^2.0.0",
+    "recharts": "^2.8.0",
+    "wavesurfer.js": "^7.3.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@jus/eslint-config": "*",
+    "@jus/react": "*",
+    "@jus/tw": "*",
+    "@playwright/test": "^1.38.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.6.1",
+    "@types/react": "^18.2.21",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "husky": "^8.0.3",
+    "jsdom": "^22.1.0",
+    "postcss": "^8.4.29",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^0.34.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

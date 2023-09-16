@@ -1,0 +1,40 @@
+{
+  "name": "jus",
+  "private": false,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "prepub": "lerna run typecheck && lerna run lint && vitest run && lerna run build",
+    "storybook": "lerna run storybook",
+    "publish": "lerna publish",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "claims": "npx ts-node apps/jus-town/claims-aps.ts",
+    "validate": "lerna run lint:fix & lerna run typecheck & lerna run build",
+    "build": "lerna run build",
+    "publish:canary": "lerna publish --canary",
+    "update:deps": "ncu -u --deep"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "husky": "^8.0.3",
+    "lerna": "^7.3.0",
+    "npm-check-updates": "^16.14.3",
+    "tsup": "^7.2.0"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just214/jus/issues"
+  },
+  "homepage": "https://github.com/just214/jus#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just214/jus.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

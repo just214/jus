@@ -8,16 +8,13 @@ module.exports = {
     "eslint:recommended",
     "react-app", // See below
     "react-app/jest",
-    "prettier",
     "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended", // Should always be last. Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ["jsx-a11y", "prettier", "rulesdir"],
+  plugins: ["jsx-a11y", "rulesdir"],
   rules: {
     "no-case-declarations": "off",
 
     "no-console": ["error", { allow: ["error", "warn", "info"] }],
-    "prettier/prettier": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "rulesdir/no-public-secrets": "error",

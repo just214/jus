@@ -1,4 +1,4 @@
-# @just214/eslint-config
+# @jus/eslint-config
 
 ESLint configuration for React and TypeScript projects
 
@@ -21,7 +21,7 @@ Linting rules for:
 ## Installation
 
 ```sh
-npm i -D @just214/eslint-config eslint prettier typescript
+npm i -D @jus/eslint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ Once the library and all required dependencies are installed, you can use the pa
 
 ```json
 {
-  "extends": ["@just214"]
+  "extends": ["@jus"]
 }
 ```
 
@@ -40,7 +40,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["@just214"],
+  "extends": ["@jus"],
   "rules": {
     "functional/no-mixed-type": "warn"
   }

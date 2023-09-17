@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { preset } from "@just214/tailwind";
+import { preset } from "@jus/tailwind";
 
 module.exports = {
   content: [

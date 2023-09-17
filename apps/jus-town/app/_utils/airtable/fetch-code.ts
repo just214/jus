@@ -15,7 +15,6 @@ export async function fetchCode() {
       tracks.forEach((item) => {
         const { id, fields } = item;
 
-        // eslint-disable-next-line functional/immutable-data
         result.push({
           id,
           title: fields["Title"],

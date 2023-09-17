@@ -19,7 +19,6 @@ export function join(...args: ArgOptions[]) {
       return `${acc} ${trimmedString}`;
     } else if (Array.isArray(value)) {
       if (value[0] === "!!!") {
-        // eslint-disable-next-line functional/immutable-data
         lastValues.push(value[1]);
         return acc;
       } else {

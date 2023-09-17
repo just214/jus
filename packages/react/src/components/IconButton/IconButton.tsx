@@ -23,5 +23,4 @@ export const IconButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 
-// eslint-disable-next-line functional/immutable-data
 IconButton.displayName = "IconButton";

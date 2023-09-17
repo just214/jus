@@ -15,7 +15,6 @@ export async function fetchTracks() {
       tracks.forEach((item) => {
         const { id, fields } = item;
 
-        // eslint-disable-next-line functional/immutable-data
         result.push({
           id,
           title: fields["Title"],
@@ -46,7 +45,6 @@ export async function fetchTracks() {
     "Live At The Door",
   ];
 
-  // eslint-disable-next-line functional/immutable-data
   const formattedResult = result.sort((a, b) => {
     const groupIndexA = sortOrder.indexOf(a.album.title);
     const groupIndexB = sortOrder.indexOf(b.album.title);

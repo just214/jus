@@ -26,7 +26,6 @@ export function join(...args: ArgOptions[]) {
       if (condition === true) {
         return `${acc} ${className}`;
       } else if (condition === "!") {
-        // eslint-disable-next-line functional/immutable-data
         overrides.push(className);
       }
     }

@@ -1,6 +1,5 @@
 {
   "extends": [
-    "next/core-web-vitals",
-    "@jus"
+    "next/core-web-vitals"
   ]
 }

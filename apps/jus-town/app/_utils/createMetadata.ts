@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
 const baseUrl =
-  process.env.NODE_ENV === "production" ? "<ADD URL>" : "http://localhost:3000";
+  process.env.NODE_ENV === "production"
+    ? "https://jus-town.vercel.app"
+    : "http://localhost:3000";
 
 const DEFAULT_VALUES = {
   title: "jus",
